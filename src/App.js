@@ -13,7 +13,7 @@ const App = () => {
 
   function fetchCnpj(doc) {
     if (doc.length === 14) {
-      const cnpjURL = `http://ec2-54-157-179-215.compute-1.amazonaws.com:3000/api/cnpj/${doc}`;
+      const cnpjURL = `ec2-54-157-179-215.compute-1.amazonaws.com:3000/api/cnpj/${doc}`;
 
       axios.get(cnpjURL).then(response => {
         setEmpresa({
